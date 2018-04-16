@@ -1,0 +1,21 @@
+#top, #bottom, #left, #right {
+	background: #ffdb3a;
+	position: fixed;
+	}
+
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 5px;
+		}
+
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 5px;
+		}
+		
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+		

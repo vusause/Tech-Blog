@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Mike's Tech Blog`,
   },
   pathPrefix: `/blog`,
   plugins: [

@@ -1,29 +1,14 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import '../../styles/header.css'
+
 const Header = () => (
-  <div
-    style={{
-      background: '#f5f5f5',
-      marginBottom: '3rem',
-      borderBottom: '2px solid #e6e6e6',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 980,
-        padding: '1.45rem 1.0875rem',
-      }}
-   >
-     <h1 style={{margin: 0, textAlign: 'center',fontSize: '42px'}}>
-        <Link to="/"
-          style={{
-            color: 'black',
-            textDecoration: 'none',
-          }}
-        >
-          Blog
+  <div className="background">
+    <div className="border">
+      <h1 className="title-text">
+        <Link to="/" className="link-text">
+          Mike's Tech Blog
         </Link>
       </h1>
     </div>

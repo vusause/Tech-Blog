@@ -8,7 +8,7 @@ title: "Using Docker"
 
 ### What is Docker and Why Use It?
 
-Docker is the leading platform for developing, running and deploying applications within containers. A naive way of explaining what a containers is to say it is a wrapper for a piece of software. Isolating software from its surroundings meanwhile packaging any code, runtimes, system tools, libraries and settings needed to run. Some benefits of containers are:
+Docker is the leading platform for developing, running and deploying applications within containers. A naive way of explaining a container is to refer to it as a wrapper for a piece of software. It isolates the software from its surroundings while packaging any code, runtimes, system tools, libraries and settings needed to run. Some benefits of containers are:
 
 * Flexible: Even the most complex applications can be containerized.
 * Lightweight: Containers leverage and share the host kernel.
@@ -19,17 +19,17 @@ Docker is the leading platform for developing, running and deploying application
 
 ### What Does This Mean in The Real World?
 
-Two big practical uses for containers are 
+Two big practical uses for containers are:
 
 * Prepackaged environments for developers. With Docker developers no longer has to worry about application environment setup. Prepackaged images can be made for developer, staging and production enviroments with everything preconfigured. This means no more "It works on my machine errors"!
 
-* Containers are easy to work in from a deployment standpoint. For devops, platform engineers and sysadmins it means deployed environments are easier to manage. Containers offer flexibility since there is reduced coupling between the enviroment and software itself. You can more quickly and easily deploy upgrades and newer versions of software and fix any problems with deployments just as quickly and easily.
+* Containers are easy to work in from a deployment standpoint. For devops, platform engineers and sysadmins it means deployed environments are easier to manage. Containers offer flexibility since there is reduced coupling between the enviroment and software itself. You can quickly and easily deploy upgrades and newer versions of software and fix problems with deployments.
 
 ### Installing Docker
 
-To install docker download the .dmg file by runnin the following command `brew cask install docker` or by clicking on the following [link](https://download.docker.com/mac/stable/Docker.dmg). Then run the image and give docker permissions to run.
+To install Docker download the .dmg file by runnin the following command `brew cask install docker` or by clicking on the following [link](https://download.docker.com/mac/stable/Docker.dmg). Then run the file and give Docker permission to run.
 
-To verify if you have docker running properly run `docker version`.
+To verify if you have Docker running properly run `docker version`.
 
 #### The Contents of the Container
 
@@ -107,7 +107,7 @@ CMD [ "npm", "start" ]
 
 ```
 
-And the following `.dockerignore` file. All files and directories specified in the `.dockerignore` file will not be included when building the image.
+Also create the following `.dockerignore` file. All files and directories specified in the `.dockerignore` file will not be included when building the image.
 
 ```
 **/node_modules
@@ -132,13 +132,13 @@ You should see the following images in your directory.
 ```
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 five-server         latest              ab5578b1699d        20 seconds ago      676MB
-node                latest              aa3e171e4e95        7 days ago          673MB
+node               latest              aa3e171e4e95        7 days ago          673MB
 ```
 
-Now finally to run the image as a container. Note that this will map port 5555 within the container to port 8080 on your localhost
+Now finally to run the image as a container. Note that this will map port 5555 within the container to port 8080 on your localhost.
 
 ```
 $ docker run -p 5555:8080 five-server
 ```
 
-If you access `localhost:8080` and recieve the result `5` then congratulations you have successfully created and run your first Docker container!
+If you access localhost:8080 and recieve the payload '5' then congratulations, you have successfully created and run your first Docker container!

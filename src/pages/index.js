@@ -1,9 +1,11 @@
-import React from "react";
-import Link from "gatsby-link";
-import Helmet from "react-helmet";
-import '../styles/blog-listing.css';
+import React from 'react'
+import Link from 'gatsby-link'
+import Helmet from 'react-helmet'
+
+import '../styles/blog-listing.css'
+
 export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
+  const { edges: posts } = data.allMarkdownRemark
   return (
     <div className="blog-posts">
       {posts
@@ -17,10 +19,10 @@ export default function Index({ data }) {
               <h2>{post.frontmatter.date}</h2>
               <p>{post.excerpt}</p>
             </div>
-          );
+          )
         })}
     </div>
-  );
+  )
 }
 
 export const pageQuery = graphql`
@@ -39,4 +41,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
