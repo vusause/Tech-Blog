@@ -4,10 +4,6 @@
       "component---src-pages-index-js-52167bff1713f2cf17ac.js",
       "component---src-pages-index-js-52167bff1713f2cf17ac.js.map"
     ],
-    "path---kubernetes": [
-      "path---kubernetes-429ac59e399517c6823a.js",
-      "path---kubernetes-429ac59e399517c6823a.js.map"
-    ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
@@ -25,8 +21,8 @@
       "component---src-layouts-index-js-8c64098fc9eeae7710ce.js.map"
     ],
     "path---index": [
-      "path---index-0caaaa8c5a95dbdc7536.js",
-      "path---index-0caaaa8c5a95dbdc7536.js.map"
+      "path---index-cb24d76ecc27c482afb4.js",
+      "path---index-cb24d76ecc27c482afb4.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -47,9 +43,9 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-1b2b7f85a88f9c861d9d.js",
+      "app-305ca573a3adad9bdc3d.js",
       "build-js-styles.css",
-      "app-1b2b7f85a88f9c861d9d.js.map",
+      "app-305ca573a3adad9bdc3d.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
